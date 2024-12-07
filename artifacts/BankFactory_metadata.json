@@ -1,0 +1,151 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "BankContract",
+				"outputs": [
+					{
+						"internalType": "contract BankDetails",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_accountNo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_depositAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "bfDepositFund",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_accountNo",
+						"type": "uint256"
+					}
+				],
+				"name": "bfGet",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "accountNo",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "accountBalance",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct BankDetails.Customer",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_accountNo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_accountBalance",
+						"type": "uint256"
+					}
+				],
+				"name": "bfStoreDetails",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deployBankContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BankFactory.sol": "BankFactory"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BankDetails.sol": {
+			"keccak256": "0x61ba3c47955d3c9f118e0995cd576407f8eb657bfb9f683e9ac3aacacc03c191",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://558aa498a8a84c9174f3530ad0bdbc63fbac303c77539f1b956a6c0e247886c0",
+				"dweb:/ipfs/QmZL68pJ9mBPw9hzfo6w7q4mQyosqd1C4sZSHrQqWksAgM"
+			]
+		},
+		"BankFactory.sol": {
+			"keccak256": "0x6d11d05776cc65108e97035d31adac54b51131974086e9b1d2d839fc493f8d62",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://db5bc8367e7ea4f7c2d71a72c0ec6c31ad0f53d9fedcc799e5d075eaab1a7851",
+				"dweb:/ipfs/QmS83NccmvStUnUhkpim679BoXdki8Rfppi1xMMWba1z94"
+			]
+		}
+	},
+	"version": 1
+}
